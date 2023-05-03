@@ -47,3 +47,11 @@ def evaluate_model(X,y,X_test,y_test,models,params):
         return report
     except Exception as yt:
         raise CustomException(yt,sys)
+
+
+def load_object(file_path):
+    try:
+        with open(file_path,"rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as yt:
+        raise CustomException(yt,sys)
