@@ -8,7 +8,6 @@ from src.utils import load_object
 class PredictionPipeline:
     def __init__(self):
         pass
-
     def predict(self,features):
         try:
             model_path='artifacts/model.pkl'
